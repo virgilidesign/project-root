@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | Conceptos aprendidos en HTML</title>
+    <link rel="icon" type="image/png" href="img_optimizadas/favicon.png">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="./img_optimizadas/header.gif" alt="Imagen de cabecera" width="40%"
+            style="display: block; margin: auto;">
+
+    </header>
+
+    <body>
+
+        <h1>Formulario de valoración de la práctica</h1>
+
+        <form action="https://formspree.io/f/mnppybjk" method="post">
+
+            <!-- 1. Email de contacto -->
+            <label for="email">Email de contacto:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <!-- 2. Lista desplegable -->
+
+            <label for="concepto">Selecciona un concepto aprendido:</label>
+
+            <select id="concepto" name="concepto">
+                <option value="texto">Etiquetas de texto</option>
+                <option value="listas">Listas</option>
+                <option value="imagenes">Imágenes</option>
+                <option value="tablas">Tablas</option>
+                <option value="enlaces">Enlaces</option>
+                <option value="comentarios">Comentarios</option>
+            </select>
+
+            <br><br>
+
+            <!-- 3. Valoración de la práctica -->
+            <p>¿Cómo valorarías la práctica?</p>
+
+            <input type="radio" id="dificil" name="valoracion" value="Difícil">
+            <label for="dificil">Difícil</label>
+            <br>
+
+            <input type="radio" id="larga" name="valoracion" value="Un poco larga">
+            <label for="larga">Difícil no, pero un poco larga sí</label>
+            <br>
+
+            <input type="radio" id="normal" name="valoracion" value="Normal">
+            <label for="normal">Normal</label>
+            <br>
+
+            <input type="radio" id="facil" name="valoracion" value="Fácil">
+            <label for="facil">Fácil</label>
+            <br>
+
+            <input type="radio" id="pan" name="valoracion" value="Pan comido">
+            <label for="pan">Pan comido</label>
+
+            <br><br>
+
+            <!-- 4. Botones -->
+            <button type="submit">Enviar</button>
+
+            <button type="reset">Reset</button>
+
+        </form>
+        <br>
+        <section>
+
+            <a href="index.html"><img src="img_original/back.png" alt="Ir a la página principal" width="50"
+                    title="Ir a la página principal"></a>
+
+        </section>
+    </body>
+
+    <footer>
+        <p>&copy; 2026 Conceptos básicos en HTML. Todos los derechos reservados.</p>
+        <p>Contacto: info@virgilidesign.com</p>
+        <p>Diseñado por David Virgili</p>
+    </footer>
+
+</html>
